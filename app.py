@@ -4,11 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Hello, Flask!"
-
-# Required for Vercel Deployment
-def handler(event, context):
-    return app(event, context)
+    return "Hello, Flask App on Vercel!"
 
 if __name__ == '__main__':
     app.run(debug=True)
